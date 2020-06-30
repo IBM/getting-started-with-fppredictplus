@@ -127,7 +127,7 @@ We are all set to launch the instance. How do we do it? We need to click on Netw
 
 ## Register the instance of FPPredict Plus
 
-We can login using the default credentials as per the configuration file, accept the end user license agreement and will be directed automatically to register the instance with the trial version license key.
+We can login using the default credentials as per the [configuration file](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/credentials.txt), accept the end user license agreement and will be directed automatically to register the instance with the trial version license key.
 
 ### With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator on OpenShift cluster to solve usecases under AI. 
 
