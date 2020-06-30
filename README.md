@@ -88,3 +88,14 @@ Create Operator Subscription by choosing All namespaces or specific namespace (s
 After a couple of minutes, the operator gets installed on the cluster. We can verify by clicking on Installed Operators under ** Operators ** and see that the operator is successfully installed with status showing as Succeeded.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/installed-operator.png)
+
+## Create storage for the operator
+
+We need to create a persistent volume claim (storage) to handle datasets and bind it to the instance of this operator. Click on storage under Web Console and select Persistent Volume Claims.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/select-pvc.png)
+
+The next step is to create persistent volume claim. We can select Storage Class from Gold, Silver, Bronze which was created in previous step, select single user access & assign the storage size in GB. In this case, we have selected 24 GB.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-pvc.png)
+
