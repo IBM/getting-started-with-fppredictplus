@@ -25,20 +25,20 @@ Follow the steps below to launch the cluster console which is also called RedHat
 
 Login to IBM Cloud Account and navigate to Dashboard
 
-[Dashboard](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/dashboard.png)
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/dashboard.png)
 
 Click on Clusters and select the cluster which you have created under prerequisites. In our case, cluster name is cp-rhm-poc.
 
-[Select the cluster](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/cluster.png)
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/cluster.png)
 
 After you launch the cluster, click on OpenShift web console on the top right hand side.
 
-[Launch Web Console](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/web-console.png)
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/web-console.png)
 
 We can see the RedHat OpenShift Container Platform (Web Console). Click on question mark ikon on the top right hand side and select Command Line Tools. 
 
-[Command line tools](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/cmd-line-tools.png)
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/cmd-line-tools.png)
 
 Navigate to the section `oc - OpenShift Command Line Interface (CLI)` and download the respective oc binary onto your local system. This is needed to manage OpenShift projects from a terminal and is further extended to natively support OpenShift Container Platform features.
 
-[Install oc binary](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/oc-binary.png)
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/oc-binary.png)
