@@ -99,6 +99,10 @@ The next step is to create persistent volume claim. We can select Storage Class 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-pvc.png)
 
+After the PVC is created, it needs to be bound with the persistent volume (PV) which was created in earlier step. We should see the status as `Bound` per below.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/pvc-bound.png)
+
 ## Install the operand (Instance) of FPPredict Plus
 
 Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the name under persistent volume with `useExisting as false`, persistent volume claims, routerCanonicalHostname and hit `Save`.
