@@ -42,3 +42,19 @@ We can see the RedHat OpenShift Container Platform (Web Console). Click on quest
 Navigate to the section `oc - OpenShift Command Line Interface (CLI)` and download the respective oc binary onto your local system. This is needed to manage OpenShift projects from a terminal and is further extended to natively support OpenShift Container Platform features.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/oc-binary.png)
+
+We are all set to proceed to next step which is to register the OpenShift cluster on RedHat Marketplace platform. This is mandatory to install any operators from RedHat Marketplace platform using the OpenShift cluster.
+
+## Register the cluster on RedHat Marketplace
+
+Login to RHM portal at https://marketplace.redhat.com/en-us and click on workspace and then click on cluster. We need to add our new OpenShift cluster and register it.
+
+![]()
+
+Update the cluster name, generate the pull secret as per the instructions and save it. 
+
+![]()
+
+Copy the curl command which starts with `curl -sL https` and append the pull secret towards the end. The entire script should be handy to be used in next step.
+
+![]()
