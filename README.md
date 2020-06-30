@@ -2,11 +2,11 @@
 
 In this tutorial, we demonstrate how to install, setup and get started using the Findability Platform Predict Plus (FPPredict Plus) operator on RedHat Marketplace (RHM). The advantages of using RHM operators are per below.  
 
-* Software for any cloud :- Enterprise software for container-based environments in public clouds and on-prem
+* `Software for any cloud` :- Enterprise software for container-based environments in public clouds and on-prem
 
-* Automated deployment :- Fast, integrated experience with instant availability on Red Hat® OpenShift® clusters
+* `Automated deployment` :- Fast, integrated experience with instant availability on Red Hat® OpenShift® clusters
 
-* Fully supported :- Free, continuous support for products purchased through Red Hat Marketplace
+* `Fully supported` :- Free, continuous support for products purchased through Red Hat Marketplace
 
 ## A brief about Findability Platform Predict Plus operator
 
