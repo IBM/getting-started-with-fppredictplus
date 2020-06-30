@@ -47,14 +47,20 @@ We are all set to proceed to next step which is to register the OpenShift cluste
 
 ## Register the cluster on RedHat Marketplace
 
-Login to RHM portal at https://marketplace.redhat.com/en-us and click on workspace and then click on cluster. We need to add our new OpenShift cluster and register it.
+1. Sign up and login to RHM portal at [Link](https://marketplace.redhat.com/en-us) and click on workspace and then click on cluster. We need to add our new OpenShift cluster and register it on RHM platform.
 
-![]()
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/add-cluster.png)
 
-Update the cluster name, generate the pull secret as per the instructions and save it. 
+2. Update the cluster name, generate the pull secret as per the instructions and save it. 
 
-![]()
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/cluster-details.png)
 
-Copy the curl command which starts with `curl -sL https` and append the pull secret towards the end. The entire script should be handy to be used in next step.
+3. Copy the curl command which starts with `curl -sL https` and append the pull secret towards the end. The entire script should be handy to be used in next step.
 
-![]()
+We need to start the cluster first to register it. Open a command prompt and type oc login, update the username and password which are used for accessing the cluster and hit enter. 
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/start-cluster.png)
+
+The cluster is up and running at this point. We need to run the entire script which is from previous step and hit enter. It will take a couple of mins and we can see that we have successfully registered the cluster on RHM portal.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/register-cluster.png)
