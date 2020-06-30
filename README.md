@@ -64,3 +64,6 @@ We need to start the cluster first to register it. Open a command prompt and typ
 The cluster is up and running at this point. We need to run the entire script which is from previous step and hit enter. It will take a couple of mins and we can see that we have successfully registered the cluster on RHM portal.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/register-cluster.png)
+
+## Install the operator
+
