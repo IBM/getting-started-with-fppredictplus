@@ -15,3 +15,17 @@ This operator is helpful to solve some of the usecases under AI using different 
 
 ## Prerequisites
 
+For all operators being installed from RHM, OpenShift cluster version 4.3 or higher is mandatory. Please set up Classic cluster using the instructions from below URL.
+
+[Setting up OpenShift Cluster](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
+
+## Next Step - Access the RedHat OpenShift Container Platform
+
+Follow the steps below to launch the cluster console which is also called RedHat OpenShift Container Platform.
+
+
+
+
+
+
+
