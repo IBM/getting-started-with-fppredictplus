@@ -67,7 +67,7 @@ The cluster is up and running at this point. We need to run the entire script wh
 
 ## Create a project in web console
 
-We need to create a project to be used and managed from command line. Click on Create Project and give a name as findability-project.
+We need to create a project to be used and managed from command line. Click on Create Project and give a name as `findability-project`.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-project.png)
 
@@ -91,7 +91,7 @@ Create Operator Subscription by choosing All namespaces or specific namespace (s
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/subscribe.png)
 
-After a couple of minutes, the operator gets installed on the cluster. We can verify by clicking on Installed Operators under ** Operators ** and see that the operator is successfully installed with status showing as Succeeded.
+After a couple of minutes, the operator gets installed on the cluster. We can verify by clicking on Installed Operators under `Operators` and see that the operator is successfully installed with status showing as Succeeded.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/installed-operator.png)
 
@@ -129,5 +129,5 @@ We are all set to launch the instance. How do we do it? We need to click on Netw
 
 We can login using the default credentials as per the configuration file, accept the end user license agreement and will be directed automatically to register the instance with the trial version license key.
 
-With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator on OpenShift cluster to solve usecases under AI. 
+### With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator on OpenShift cluster to solve usecases under AI. 
 
