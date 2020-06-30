@@ -109,7 +109,7 @@ The next step is to create persistent volume claim. We can select Storage Class 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-pvc.png)
 
-After the PVC is created, it needs to be bound with the persistent volume (PV) which was created in earlier step. We should see the status as `Bound` per below.
+After the persistent volume claim (PVC) is created, it needs to be bound with the persistent volume (PV) which was created in earlier step. We should see the status as `Bound` per below after couple of minutes.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/pvc-bound.png)
 
