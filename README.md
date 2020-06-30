@@ -1,6 +1,6 @@
-# How to install, setup & get started using the Findability Platform Predict Plus operator on RedHat Marketplace
+# How to install, setup & get started using the Findability Platform Predict Plus operator on RedHat OpenShift cluster
 
-In this tutorial, we demonstrate how to install, setup and get started using the Findability Platform Predict Plus (FPPredict Plus) operator on RedHat Marketplace (RHM). The advantages of using RHM operators are per below.  
+In this tutorial, we demonstrate how to install, setup and get started using the Findability Platform Predict Plus (FPPredict Plus) operator from RedHat Marketplace (RHM). The advantages of using RHM operators are per below.  
 
 * `Software for any cloud` :- Enterprise software for container-based environments in public clouds and on-prem
 
