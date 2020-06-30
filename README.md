@@ -95,7 +95,13 @@ We need to create a persistent volume claim (storage) to handle datasets and bin
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/select-pvc.png)
 
-The next step is to create persistent volume claim. We can select Storage Class from Gold, Silver, Bronze which was created in previous step, select single user access & assign the storage size in GB. In this case, we have selected 24 GB.
+The next step is to create persistent volume claim. We can select Storage Class from Gold, Silver, Bronze which was created in previous step, give the name as `fp-predict-plus-pvc`, select single user access & assign the storage size in GB. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-pvc.png)
+
+## Install the operand (Instance) of FPPredict Plus
+
+Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the name under persistent volume with `useExisting as false`, persistent volume claims, routerCanonicalHostname and hit `Save`.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/yaml-changes.png)
 
