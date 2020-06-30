@@ -81,6 +81,12 @@ Click on Fp Predict Plus Operator (non custom) and hit install.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/select-install.png)
 
+`Note` :- This is a trial instance with the following constraints per below.
+
+1. Up to 100K rows in training data and up to 50K rows in prediction data
+2. Up to 500 variables, features and columns
+3. 30 days free trial
+
 Create Operator Subscription by choosing All namespaces or specific namespace (select findability-project) and hit subscribe.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/subscribe.png)
@@ -105,7 +111,23 @@ After the PVC is created, it needs to be bound with the persistent volume (PV) w
 
 ## Install the operand (Instance) of FPPredict Plus
 
-Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the name under persistent volume with `useExisting as false`, persistent volume claims, routerCanonicalHostname and hit `Save`.
+Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the name per below under persistent volume with `useExisting as false`, name of persistent volume claims, routerCanonicalHostname would be the web console URL and hit `Save`. routerCanonicalHostname would start with the cluster name, cluster id till appdomain.cloud. The initial part in the URL - `https://console-openshift-console` should be removed while updating routerCanonicalHostname.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/yaml-changes.png)
+
+The next step is to proceed towards FP-Predict-Plus option and click on Create FPpredictplus instance. Edit the YAML file and give a name for the instance and click `Save`.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/operand.png)
+
+## Launch the operand (Instance) of FPPredict Plus
+
+We are all set to launch the instance. How do we do it? We need to click on Networking and select Routes and then click on the URL which is under the location to launch the instance. 
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/route.png)
+
+## Register the instance of FPPredict Plus
+
+We can login using the default credentials as per the configuration file, accept the end user license agreement and will be directed automatically to register the instance with the trial version license key.
+
+With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator on OpenShift cluster to solve usecases under AI. 
 
