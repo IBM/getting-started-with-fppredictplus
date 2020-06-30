@@ -97,11 +97,15 @@ After a couple of minutes, the operator gets installed on the cluster. We can ve
 
 ## Create storage for the operator
 
-We need to create a persistent volume claim (storage) to handle datasets and bind it to the instance of this operator. Click on storage under Web Console and select Persistent Volume Claims.
+We need to create persistent volume in the name of `fp-predict-plus-pv` to be bound to persistent volume claims. This step is necessary to enable storage capabilities for the operator to manage datasets. Click on persistent volume under Storage, update the name as `fp-predict-plus-pv` and storage capacity as 20 GB and hit `Create`. If we need more storage, we can increase it in the YAML file and create the persistent volume accordingly.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-pv.png)
+
+We need to create a persistent volume claim (storage) to use the storage created in previous step and bind it to the instance of this operator. Click on storage under Web Console and select Persistent Volume Claims.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/select-pvc.png)
 
-The next step is to create persistent volume claim. We can select Storage Class from Gold, Silver, Bronze which was created in previous step, give the name as `fp-predict-plus-pvc`, select single user access & assign the storage size in GB. 
+The next step is to create persistent volume claim. We can select Storage Class from Gold, Silver, Bronze which was created in previous step, give the name as `fp-predict-plus-pvc`, select single user access & assign the storage size as 20 GB. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-pvc.png)
 
