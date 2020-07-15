@@ -8,7 +8,7 @@ In this tutorial, we demonstrate how to install, setup and get started using the
 
 * `Fully supported` :- Free, continuous support for products purchased through Red Hat Marketplace
 
-## A brief about Findability Platform Predict Plus operator
+## A brief about Findability Platform Predict Plus operator (Version - 0.0.4)
 
 This operator is helpful to solve some of the usecases under AI using different methods like Regression, Classification, Timeseries etc. This operator will be applicable to developers, data scientists, architects who wants to solve different usecases under machine learning and AI. 
 
@@ -131,7 +131,11 @@ We are all set to launch the instance. How do we do it? We need to click on Netw
 
 ## Register the instance of FPPredict Plus
 
-We can login using the default credentials as per the [configuration file](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/credentials.txt), accept the end user license agreement and will be directed automatically to register the instance with the trial version license key.
+We can login using the default credentials as per the [configuration file](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/credentials.txt), accept the end user license agreement and will be directed to the next page per below. Click on `Download` and share the file with the Findability Sciences support team. The support team will send the license file (with 30 days validity) and needs to be uploaded using the `upload file` option. We are all set to access the instance of FPPredict Plus. 
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sys-info.png)
+
+`Note` :- We may have to repeat all the steps if there is a version upgrade as some of the components from setup does not support product upgrades.
 
 ### With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator from RedHat Marketplace on OpenShift cluster to solve usecases under AI. 
 
