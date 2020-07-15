@@ -131,7 +131,7 @@ We are all set to launch the instance. How do we do it? We need to click on Netw
 
 ## Register the instance of FPPredict Plus
 
-We can login using the default credentials as per the [configuration file](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/credentials.txt), accept the end user license agreement and will be directed to the next page per below. Click on `Download` and share the file with the Findability Sciences support team. The support team will send the license file (with 30 days validity) and needs to be uploaded using the `upload file` option. We are all set to access the instance of FPPredict Plus. 
+We can login using the default credentials as per the [configuration file](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/credentials.txt), accept the end user license agreement and will be directed to the next page per below. Click on `Download` and share the file with the Findability Sciences support team. The support team will send the license file (with 30 days validity) and needs to be uploaded using the `Upload File` option. We are all set to access the instance of FPPredict Plus. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sys-info.png)
 
