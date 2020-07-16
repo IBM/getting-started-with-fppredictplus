@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 ### How to install, setup & get started using the Findability Platform Predict Plus operator on RedHat OpenShift cluster
 
@@ -17,17 +17,17 @@ The advantages of using RHM operators are per below.
 This operator is helpful to solve some of the usecases under AI using different methods like Regression, Classification, Timeseries etc. This operator will be applicable to developers, data scientists, architects who wants to solve different usecases under machine learning and AI. 
 
 
-## Prerequisites
+# Prerequisites
 
 For all operators being installed from RHM, OpenShift cluster version 4.3 or higher is mandatory. Please set up Classic cluster using the instructions from below URL.
 
 [Setting up OpenShift Cluster](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
 
-## Estimated time
+# Estimated time
 
 It would take about an hour to complete the tutorial.
 
-## Steps
+# Steps
 
 ### Access the RedHat OpenShift Container Platform (Web Console)
 
@@ -147,11 +147,11 @@ We can login using the default credentials as per the [configuration file](https
 
 `Note` :- We may have to repeat all the steps if there is a version upgrade as some of the components from setup does not support product upgrades.
 
-## Summary
+# Summary
 
 With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator from RedHat Marketplace on OpenShift cluster to solve usecases under AI. 
 
-## Related Links
+# Related Links
 
 TBD
 
