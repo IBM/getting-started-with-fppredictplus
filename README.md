@@ -1,6 +1,10 @@
-# How to install, setup & get started using the Findability Platform Predict Plus operator on RedHat OpenShift cluster
+## Introduction
 
-In this tutorial, we demonstrate how to install, setup and get started using the Findability Platform Predict Plus (FPPredict Plus) operator from RedHat Marketplace (RHM). The advantages of using RHM operators are per below.  
+## How to install, setup & get started using the Findability Platform Predict Plus operator on RedHat OpenShift cluster
+
+In this tutorial, we demonstrate how to install, setup and get started using the Findability Platform Predict Plus (FPPredict Plus) operator from RedHat Marketplace (RHM). Every operator on RedHat Marketplace has different setup for installation and configuration and the focus of this tutorial is Findability Platform Predict Plus operator.
+
+The advantages of using RHM operators are per below.  
 
 * `Software for any cloud` :- Enterprise software for container-based environments in public clouds and on-prem
 
@@ -19,7 +23,13 @@ For all operators being installed from RHM, OpenShift cluster version 4.3 or hig
 
 [Setting up OpenShift Cluster](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
 
-## Next Step - Access the RedHat OpenShift Container Platform (Web Console)
+## Estimated time
+
+It would take about an hour to complete the tutorial.
+
+## Steps
+
+### Access the RedHat OpenShift Container Platform (Web Console)
 
 Follow the steps below to launch the cluster console which is also called RedHat OpenShift Container Platform.
 
@@ -45,7 +55,7 @@ Navigate to the section `oc - OpenShift Command Line Interface (CLI)` and downlo
 
 We are all set to proceed to next step which is to register the OpenShift cluster on RedHat Marketplace platform. This is mandatory to install any operators from RedHat Marketplace platform using the OpenShift cluster.
 
-## Register the cluster on RedHat Marketplace
+### Register the cluster on RedHat Marketplace
 
 Sign up and login to RHM portal at [Link](https://marketplace.redhat.com/en-us) and click on workspace and then click on cluster. We need to add our new OpenShift cluster and register it on RHM platform.
 
@@ -65,13 +75,13 @@ The cluster is up and running at this point. We need to run the entire script wh
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/register-cluster.png)
 
-## Create a project in web console
+### Create a project in web console
 
 We need to create a project to be used and managed from command line. Click on Create Project and give a name as `findability-project`.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-project.png)
 
-## Install the operator
+### Install the operator
 
 Navigate to OpenShift web console which was launched during previous step. Select operatorhub under Operators and type FP in the search bar and hit 
 
@@ -95,7 +105,7 @@ After a couple of minutes, the operator gets installed on the cluster. We can ve
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/installed-operator.png)
 
-## Create storage for the operator
+### Create storage for the operator
 
 We need to create persistent volume in the name of `fp-predict-plus-pv` to be bound to persistent volume claims. This step is necessary to enable storage capabilities for the operator to manage datasets. Click on persistent volume under Storage, update the name as `fp-predict-plus-pv` and storage capacity as 20 GB and hit `Create`. If we need more storage, we can increase it in the YAML file and create the persistent volume accordingly.
 
@@ -113,7 +123,7 @@ After the persistent volume claim (PVC) is created, it needs to be bound with th
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/pvc-bound.png)
 
-## Install the operand (Instance) of FPPredict Plus
+### Install the operand (Instance) of FPPredict Plus
 
 Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the name per below under persistent volume with `useExisting as false`, name of persistent volume claims, routerCanonicalHostname would be the web console URL and hit `Save`. routerCanonicalHostname would start with the cluster name, cluster id till appdomain.cloud. The initial part in the URL - `https://console-openshift-console` should be removed while updating routerCanonicalHostname.
 
@@ -123,13 +133,13 @@ The next step is to proceed towards FP-Predict-Plus option and click on Create F
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/operand.png)
 
-## Launch the operand (Instance) of FPPredict Plus
+### Launch the operand (Instance) of FPPredict Plus
 
 We are all set to launch the instance. How do we do it? We need to click on Networking and select Routes and then click on the URL which is under the location to launch the instance. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/route.png)
 
-## Register the instance of FPPredict Plus
+### Register the instance of FPPredict Plus
 
 We can login using the default credentials as per the [configuration file](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/credentials.txt), accept the end user license agreement and will be directed to the next page per below. Click on `Download` and share the file with the Findability Sciences support team. The support team will send the license file (with 30 days validity) and needs to be uploaded using the `Upload File` option. We are all set to access the instance of FPPredict Plus. 
 
@@ -137,5 +147,11 @@ We can login using the default credentials as per the [configuration file](https
 
 `Note` :- We may have to repeat all the steps if there is a version upgrade as some of the components from setup does not support product upgrades.
 
-### With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator from RedHat Marketplace on OpenShift cluster to solve usecases under AI. 
+## Summary
+
+With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator from RedHat Marketplace on OpenShift cluster to solve usecases under AI. 
+
+## Related Links
+
+TBD
 
