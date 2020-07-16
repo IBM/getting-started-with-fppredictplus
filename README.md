@@ -14,7 +14,7 @@ The advantages of using RHM operators are per below.
 
 ### A brief about Findability Platform Predict Plus operator (Version - 0.0.4)
 
-This operator is helpful to solve some of the usecases under AI using different methods like Regression, Classification, Timeseries etc. This operator will be applicable to developers, data scientists, architects who wants to solve different usecases under machine learning and AI. 
+FP-Predict +™, an Automated, self learning, and Multi Modeling AI that handles Discrete Target variable, Continuous Target variable and Time series data with no need for coding. This operator will be helpful to solve some of the usecases under AI using different methods like Regression, Classification, Timeseries etc. This operator will be applicable to developers, data scientists, architects who wants to solve different usecases under machine learning and AI. 
 
 
 # Prerequisites
