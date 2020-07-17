@@ -95,9 +95,9 @@ We need to create a project to be used and managed from command line. Click on `
 
 `Note` :- This is a trial instance with the following constraints per below.
 
-1. Up to 100K rows in training data and up to 50K rows in prediction data
-2. Up to 500 variables, features and columns
-3. 30 days free trial
+* Up to 100K rows in training data and up to 50K rows in prediction data
+* Up to 500 variables, features and columns
+* 30 days free trial
 
 **Navigate to `Workspace` option at the top and click on `My software` option on the left pane.
 
