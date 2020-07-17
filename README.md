@@ -1,8 +1,13 @@
-# Introduction
+# Introduction 
 
-### How to install, setup & get started using the Findability Platform Predict Plus operator on RedHat OpenShift cluster
+Introducing Red Hat® Marketplace, an open cloud marketplace that makes it easier to discover and access certified software for container-based environments in public clouds and on-prem. With automated deployment, software is immediately available to deploy on any Red Hat® OpenShift® cluster, providing a fast, integrated experience.
 
-In this tutorial, we demonstrate how to install, setup and get started using the Findability Platform Predict Plus (FPPredict Plus) operator from RedHat Marketplace (RHM). Every operator on RedHat Marketplace has different setup for installation and configuration and the focus of this tutorial is Findability Platform Predict Plus operator.
+Know more about Red Hat Marketplace at [here](https://marketplace.redhat.com/en-us/about).
+
+
+### How to install, setup & get started using the Findability Platform Predict Plus operator on Red Hat OpenShift cluster
+
+In this tutorial, we demonstrate how to install, setup and get started using the Findability Platform Predict Plus (FPPredict Plus) operator from Red Hat Marketplace (RHM). Every operator on Red Hat Marketplace has different setup for installation and configuration and the focus of this tutorial is Findability Platform Predict Plus operator.
 
 The advantages of using RHM operators are per below.  
 
@@ -23,7 +28,7 @@ For all operators being installed from RHM, OpenShift cluster version 4.3 or hig
 
 [Setting up OpenShift Cluster](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
 
-We need to have an account created at RedHat Marketplace by following this [link](https://marketplace.redhat.com/api-security/en-us/login/landing).
+We need to have an account created at Red Hat Marketplace by following this [link](https://marketplace.redhat.com/api-security/en-us/login/landing).
 
 # Estimated time
 
@@ -55,9 +60,9 @@ Navigate to the section `oc - OpenShift Command Line Interface (CLI)` and downlo
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/oc-binary.png)
 
-We are all set to proceed to next step which is to register the OpenShift cluster on RedHat Marketplace platform. This is mandatory to install any operators from RedHat Marketplace platform using the OpenShift cluster.
+We are all set to proceed to next step which is to register the OpenShift cluster on Red Hat Marketplace platform. This is mandatory to install any operators from RedHat Marketplace platform using the OpenShift cluster.
 
-### Register the cluster on RedHat Marketplace
+### Register the cluster on Red Hat Marketplace
 
 Sign up and login to RHM portal at [Link](https://marketplace.redhat.com/en-us) and click on workspace and then click on cluster. We need to add our new OpenShift cluster and register it on RHM platform.
 
@@ -73,7 +78,7 @@ We need to start the cluster first to register it. Open a command prompt and typ
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/start-cluster.png)
 
-The cluster is up and running at this point. We need to run the entire script on command prompt which is copied from previous step and hit `enter`. It will take a couple of mins and we can see that we have successfully registered the cluster on RedHat Marketplace portal.
+The cluster is up and running at this point. We need to run the entire script on command prompt which is copied from previous step and hit `enter` or `return` in Mac. It will take a couple of mins and we can see that we have successfully registered the cluster on RedHat Marketplace portal.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/register-cluster.png)
 
@@ -85,7 +90,7 @@ We need to create a project to be used and managed from command line. Click on `
 
 ### Install the operator
 
-**Sign in to RedHat Marketplace, navigate to the search bar and select `Findability Platform Predict Plus`.
+**Sign in to Red Hat Marketplace, navigate to the search bar and select `Findability Platform Predict Plus`.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-operator.png)
 
@@ -149,7 +154,7 @@ The next step is to proceed towards FP-Predict-Plus option and click on Create F
 
 ### Launch the operand (Instance) of FPPredict Plus
 
-We are all set to launch the instance. How do we do it? We need to click on Networking and select Routes and then click on the URL which is under the location to launch the instance. 
+We are all set to launch the instance. `How do we do it?` We need to click on Networking and select Routes and then click on the URL which is under the location to launch the instance. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/route.png)
 
@@ -163,7 +168,7 @@ We can login using the default credentials as per the [configuration file](https
 
 # Summary
 
-With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator from RedHat Marketplace on OpenShift cluster to solve usecases under AI. RedHat Marketplace is a one stop platform for exploring multiple operators which will help to solve some of the complex usecases under different domains. 
+With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator from Red Hat Marketplace on OpenShift cluster to solve usecases under AI. Red Hat Marketplace is a one stop platform for exploring multiple operators which will help to solve some of the complex usecases under different domains. 
 
 # Related Links
 
