@@ -79,19 +79,31 @@ The cluster is up and running at this point. We need to run the entire script wh
 
 ### Create a project in web console
 
-We need to create a project to be used and managed from command line. Click on Create Project and give a name as `findability-project`.
+We need to create a project to be used and managed from command line. Click on `Create Project` and give any name of your choice.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-project.png)
 
 ### Install the operator
 
-Navigate to OpenShift web console which was launched during previous step. Select operatorhub under Operators and type FP in the search bar and hit 
+* Sign in to RedHat Marketplace, navigate to the search bar and select `Findability Platform Predict Plus`.
 
-![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/install-operator.png)
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-operator.png)
 
-Click on Fp Predict Plus Operator (non custom) and hit install.
+* Choose the `Free trial` option in the next page and select the instance.
 
-![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/select-install.png)
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/free-trial.png)
+
+* Navigate to `Workspace` option at the top and click on `My software` option on the left pane.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/software.png)
+
+* Choose the operator `FP-Predict+` by clicking on it and we will be directed to the next page where we need to choose `Install operator` from `Operators` menu. 
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/operator-install.png)
+
+* Check the box under `Target clusters` and select the `Name` and choose the project name which was created in previous step under `Namespace Scope` option. We can leave the other default options as is and click `Install`. We are going ahead with Automatic method of installation, there is also an option do install the operator manually.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-namespace.png)
 
 `Note` :- This is a trial instance with the following constraints per below.
 
@@ -99,11 +111,11 @@ Click on Fp Predict Plus Operator (non custom) and hit install.
 2. Up to 500 variables, features and columns
 3. 30 days free trial
 
-Create Operator Subscription by choosing All namespaces or specific namespace (select findability-project) and hit subscribe.
+After a couple of minutes, the operator gets installed on the cluster. We should see the `Status` as `Up to date`. We can launch the web console by clicking on the option next to `Cluster Console`
 
-![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/subscribe.png)
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/instld-optr.png)
 
-After a couple of minutes, the operator gets installed on the cluster. We can verify by clicking on Installed Operators under `Operators` and see that the operator is successfully installed with status showing as Succeeded.
+In the Web console, we can verify by clicking on Installed Operators under `Operators` option in the navigation pane and see that the operator is successfully installed with status showing as Succeeded.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/installed-operator.png)
 
