@@ -39,15 +39,15 @@ Login to IBM Cloud Account and navigate to Dashboard
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/dashboard.png)
 
-Click on Clusters and select the cluster which you have created under prerequisites. In our case, cluster name is cp-rhm-poc.
+Click on Clusters and select the cluster which you have created under prerequisites. In this tutorial, cluster name is `cp-rhm-poc`.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/cluster.png)
 
-After you launch the cluster, click on OpenShift web console on the top right hand side.
+After you launch the cluster, click on `OpenShift web console` on the top right hand side.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/web-console.png)
 
-We can see the RedHat OpenShift Container Platform (Web Console). Click on question mark icon on the top right hand side and select Command Line Tools. 
+We can see the RedHat OpenShift Container Platform (Web Console). Click on question mark icon on the top right hand side and select `Command Line Tools`. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/cmd-line-tools.png)
 
@@ -69,17 +69,17 @@ Update the cluster name, generate the pull secret as per the instructions and sa
 
 Copy the curl command which starts with `curl -sL https` and append the pull secret towards the end. The entire script should be handy to be used in next step.
 
-We need to start the cluster first to register it. Open a command prompt and type oc login, update the username and password which are used for accessing the cluster and hit enter. 
+We need to start the cluster first to register it. Open a command prompt and type `oc login`, update the username and password which are used for accessing the cluster and hit enter. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/start-cluster.png)
 
-The cluster is up and running at this point. We need to run the entire script which is from previous step and hit enter. It will take a couple of mins and we can see that we have successfully registered the cluster on RHM portal.
+The cluster is up and running at this point. We need to run the entire script which is copied from previous step and hit enter. It will take a couple of mins and we can see that we have successfully registered the cluster on RedHat Marketplace portal.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/register-cluster.png)
 
 ### Create a project in web console
 
-We need to create a project to be used and managed from command line. Click on `Create Project` and give any name of your choice.
+We need to create a project to be used and managed from command line. Click on `Create Project` and give any name of your choice. We are using the name `findability-project` for this tutorial.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-project.png)
 
