@@ -23,11 +23,11 @@ FP-Predict +™, an Automated, self learning, and Multi Modeling Artificial Inte
 
 # Prerequisites
 
-For all operators being installed from RHM, OpenShift cluster version 4.3 or higher is mandatory. Please set up Classic cluster using the instructions from below URL.
+* For all operators being installed from RHM, OpenShift cluster version 4.3 or higher is mandatory. Please set up Classic cluster using the instructions from below URL.
 
 [Setting up OpenShift Cluster](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
 
-We need to have an account created at Red Hat Marketplace by following this [link](https://marketplace.redhat.com/api-security/en-us/login/landing).
+* We need to have an account created at Red Hat Marketplace by following this [link](https://marketplace.redhat.com/api-security/en-us/login/landing).
 
 # Estimated time
 
@@ -89,11 +89,11 @@ We need to create a project to be used and managed from command line. Click on `
 
 ### Install the operator
 
-**Sign in to Red Hat Marketplace, navigate to the search bar and select `Findability Platform Predict Plus`.
+**Sign in to Red Hat Marketplace, navigate to the search bar and select `Findability Platform Predict Plus`.**
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-operator.png)
 
-**Choose the `Free trial` option in the next page and select the instance.
+**Choose the `Free trial` option in the next page and select the instance.**
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/free-trial.png)
 
@@ -103,15 +103,15 @@ We need to create a project to be used and managed from command line. Click on `
 * Up to 500 variables, features and columns
 * 30 days free trial
 
-**Navigate to `Workspace` option at the top and click on `My software` option on the left pane.
+**Navigate to `Workspace` option at the top and click on `My software` option on the left pane.**
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/software.png)
 
-**Choose the operator `FP-Predict+` by clicking on it and we will be directed to the next page where we need to choose `Install operator` from `Operators` menu. 
+**Choose the operator `FP-Predict+` by clicking on it and we will be directed to the next page where we need to choose `Install operator` from `Operators` menu.**
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/operator-install.png)
 
-**Check the box under `Target clusters` and select the `Name` and choose the project name which was created in previous step under `Namespace Scope` option. We can leave the other default options as is and click `Install`. We are going ahead with Automatic method of installation, there is also an option do install the operator manually.
+**Check the box under `Target clusters` and select the `Name` and choose the project name which was created in previous step under `Namespace Scope` option. We can leave the other default options as is and click `Install`. We are going ahead with Automatic method of installation, there is also an option do install the operator manually.**
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-namespace.png)
 
