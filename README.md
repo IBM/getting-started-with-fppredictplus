@@ -17,11 +17,15 @@ The advantages of using RHM operators are per below.
 FP-Predict +™, an Automated, self learning, and Multi Modeling AI that handles Discrete Target variable, Continuous Target variable and Time series data with no need for coding. This operator will be helpful to solve some of the usecases under AI using different methods like Regression, Classification, Timeseries etc. This operator will be applicable to developers, data scientists, architects who wants to solve different usecases under machine learning and AI. 
 
 
+
+
 # Prerequisites
 
 For all operators being installed from RHM, OpenShift cluster version 4.3 or higher is mandatory. Please set up Classic cluster using the instructions from below URL.
 
 [Setting up OpenShift Cluster](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
+
+We need to have an account created at RedHat Marketplace by following this [link](https://marketplace.redhat.com/api-security/en-us/login/landing)
 
 # Estimated time
 
@@ -153,5 +157,5 @@ With this, we have come to the end of this tutorial to understand all the aspect
 
 # Related Links
 
-TBD
+[Know more about FP Predict+ operator on RedHat Marketplace](https://marketplace.redhat.com/en-us/products/fp-predict)
 
