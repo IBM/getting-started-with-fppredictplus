@@ -85,31 +85,31 @@ We need to create a project to be used and managed from command line. Click on `
 
 ### Install the operator
 
-* Sign in to RedHat Marketplace, navigate to the search bar and select `Findability Platform Predict Plus`.
+**Sign in to RedHat Marketplace, navigate to the search bar and select `Findability Platform Predict Plus`.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-operator.png)
 
-* Choose the `Free trial` option in the next page and select the instance.
+**Choose the `Free trial` option in the next page and select the instance.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/free-trial.png)
-
-* Navigate to `Workspace` option at the top and click on `My software` option on the left pane.
-
-![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/software.png)
-
-* Choose the operator `FP-Predict+` by clicking on it and we will be directed to the next page where we need to choose `Install operator` from `Operators` menu. 
-
-![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/operator-install.png)
-
-* Check the box under `Target clusters` and select the `Name` and choose the project name which was created in previous step under `Namespace Scope` option. We can leave the other default options as is and click `Install`. We are going ahead with Automatic method of installation, there is also an option do install the operator manually.
-
-![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-namespace.png)
 
 `Note` :- This is a trial instance with the following constraints per below.
 
 1. Up to 100K rows in training data and up to 50K rows in prediction data
 2. Up to 500 variables, features and columns
 3. 30 days free trial
+
+**Navigate to `Workspace` option at the top and click on `My software` option on the left pane.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/software.png)
+
+**Choose the operator `FP-Predict+` by clicking on it and we will be directed to the next page where we need to choose `Install operator` from `Operators` menu. 
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/operator-install.png)
+
+**Check the box under `Target clusters` and select the `Name` and choose the project name which was created in previous step under `Namespace Scope` option. We can leave the other default options as is and click `Install`. We are going ahead with Automatic method of installation, there is also an option do install the operator manually.
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-namespace.png)
 
 After a couple of minutes, the operator gets installed on the cluster. We should see the `Status` as `Up to date`. We can launch the web console by clicking on the option next to `Cluster Console`
 
@@ -163,7 +163,7 @@ We can login using the default credentials as per the [configuration file](https
 
 # Summary
 
-With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator from RedHat Marketplace on OpenShift cluster to solve usecases under AI. 
+With this, we have come to the end of this tutorial to understand all the aspects of installation, configuration, setup and more to get started using the FPPredict Plus operator from RedHat Marketplace on OpenShift cluster to solve usecases under AI. RedHat Marketplace is a one stop platform for exploring multiple operators which will help to solve some of the complex usecases under different domains. 
 
 # Related Links
 
