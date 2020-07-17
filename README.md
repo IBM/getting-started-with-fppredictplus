@@ -73,7 +73,7 @@ We need to start the cluster first to register it. Open a command prompt and typ
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/start-cluster.png)
 
-The cluster is up and running at this point. We need to run the entire script which is copied from previous step and hit enter. It will take a couple of mins and we can see that we have successfully registered the cluster on RedHat Marketplace portal.
+The cluster is up and running at this point. We need to run the entire script on command prompt which is copied from previous step and hit `enter`. It will take a couple of mins and we can see that we have successfully registered the cluster on RedHat Marketplace portal.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/register-cluster.png)
 
