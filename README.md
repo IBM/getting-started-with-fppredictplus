@@ -119,7 +119,7 @@ After a couple of minutes, the operator gets installed on the cluster. We should
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/instld-optr.png)
 
-In the Web console, we can verify by clicking on Installed Operators under `Operators` option in the navigation pane and see that the operator is successfully installed with status showing as Succeeded.
+In the Web console, we can verify by clicking on Installed Operators under `Operators` option in the `left` navigation pane and see that the operator is successfully installed with status showing as Succeeded.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/installed-operator.png)
 
@@ -162,6 +162,10 @@ We are all set to launch the instance. `How do we do it?` We need to click on Ne
 We can login using the default credentials as per the [configuration file](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/credentials.txt), accept the end user license agreement and will be directed to the next page per below. Click on `Download` and share the file with the Findability Sciences support team. The support team will send the license file (with 30 days validity) and needs to be uploaded using the `Upload File` option. We are all set to access the instance of FPPredict Plus. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sys-info.png)
+
+After uploading the license key, we can bring up the `FP Predict+` instance per below. The navigation pane on the `left` has four options namely Dashboard, Analytics, Dataset Management & License Information. We are good to go from here. 
+
+![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/fp-predict.png)
 
 `Note` :- We may have to repeat all the steps if there is a version upgrade as some of the components from setup does not support product upgrades.
 
