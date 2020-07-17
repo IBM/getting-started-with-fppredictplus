@@ -2,7 +2,7 @@
 
 Introducing Red Hat® Marketplace, an open cloud marketplace that makes it easier to discover and access certified software for container-based environments in public clouds and on-prem. With automated deployment, software is immediately available to deploy on any Red Hat® OpenShift® cluster, providing a fast, integrated experience.
 
-[Know more about Red Hat Marketplace](https://marketplace.redhat.com/en-us/about).
+[Check this out to Know more about Red Hat Marketplace](https://marketplace.redhat.com/en-us/about).
 
 ### How to install, setup & get started using the Findability Platform Predict Plus operator on Red Hat OpenShift cluster
 
