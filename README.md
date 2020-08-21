@@ -163,6 +163,8 @@ We can login using the default credentials as per the [configuration file](https
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sys-info.png)
 
+**Note :- Trial License key is provided only once by the support team. Please do not uninstall the instance of FP Predict Plus (in the web console or in Red Hat Marketplace portal) as re-installation of the instance would require a new trial license key.**
+
 After uploading the license key, we can bring up the `FP Predict+` instance per below. The navigation pane on the `left` has four options namely Dashboard, Analytics, Dataset Management & License Information. We are good to go from here. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/fp-predict.png)
