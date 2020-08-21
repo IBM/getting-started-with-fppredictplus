@@ -4,22 +4,22 @@ For Red Hat® OpenShift® 4 users, [Red Hat® Marketplace](https://marketplace.r
 
 ### Quick intro to Findability Platform Predict Plus operator (Version - 0.0.4)
 
-FP-Predict +™ is an automated, self learning, multi-modeling artificial intelligence (AI) tool that handles discrete target variables, continuous target variables, and time series data with no need for coding. <--EM: WHat is "no need for coding" referncing? Is it just a GUI that you can use?-->
+FP-Predict +™ is an automated, self learning, multi-modeling artificial intelligence (AI) tool that handles discrete target variables, continuous target variables, and time series data. Its GUI interface means no coding is required.
 
 # Prerequisites
 
-* Red Hat OpenShift version 4.3 is requried to use with the software in Red Hat Markeplace. You can set up a class cluster using these instructions: 
-[Set up OpenShift Cluster](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started) <!--EM WHy are we sending them to our docs? This is just about how to use Red Hat OpenShift on IBM Cloud-->
+* Red Hat OpenShift version 4.3 is requried to use with the software in Red Hat Markeplace. You can set up a class cluster on IBM Cloud using these instructions: 
+[Set up OpenShift Cluster](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
 
-* [Create an account](https://marketplace.redhat.com/api-security/en-us/login/landing)) on Red Hat Marketplace
+* [Create an account](https://marketplace.redhat.com/api-security/en-us/login/landing) on Red Hat Marketplace
 
 # Estimated time
 
-It would take about an hour to complete the tutorial.
+It will take about an hour to complete the tutorial.
 
 # Steps
 
-## Access the RedHat OpenShift Container Platform web console
+## Access the Red Hat OpenShift Container Platform web console
 
 Follow the steps below to launch the RedHat OpenShift Container Platform.
 
@@ -51,11 +51,11 @@ Now you are ready to register the OpenShift cluster on Red Hat Marketplace. This
 
     ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/add-cluster.png)
 
-1. Update the cluster name, generate the pull secret as per the instructions and save it. <!--EM: I'm confused about this. On the screen it looks like you create the secret, install the operator and then lick "Add cluster" but that's not what you're describing here is it?-->
+1. Update the cluster name, generate the pull secret as per the instructions and save it. <!--EM: I'm confused about this. On the screen it looks like you create the secret, install the operator and then click "Add cluster" but that's not what you're describing here is it?-->
 
     ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/cluster-details.png)
 
-1. Copy the curl command which starts with `curl -sL https` and append the pull secret towards the end. The entire script should be handy to be used in next step. <!--EM: Where is the reader getting a curl-command? Is that in the GUI? -->
+1. In the GUI, copy the curl command which starts with `curl -sL https` and append the pull secret towards the end. The entire script should be handy to be used in next step.
 
 1. You need to start the cluster first to register it. Open a command prompt and type `oc login`, update the username and password which are used for accessing the cluster, and press **Enter**. 
 
@@ -65,7 +65,7 @@ Your cluster should be up and running at this point. You need to run the entire 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/register-cluster.png)
 
-## Create a project in the web console <!--EM: Is this the RHM web console?-->
+## Create a project in the Red Hat Marketplace web console
 
 Now we will show you how to create a project to be used and managed from command line. Click **Create Project** and name the project however you want. We use the name `findability-project` for this tutorial.
 
@@ -77,7 +77,7 @@ Now we will show you how to create a project to be used and managed from command
 
     ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sel-operator.png)
 
-1. Choose the **Free trial** option on the next page and select the instance.<!--EM: The "instance" of what?-->
+1. Choose the **Free trial** option on the next page and select the software &mdash; in this case, Findability Platform Predict Plus.
 
     ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/free-trial.png)
 
@@ -103,7 +103,7 @@ Now we will show you how to create a project to be used and managed from command
 
     ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/instld-optr.png)
 
-1. In the web console, verify that you installed the operatory correctly by slecting **Operators** in the left navigation and by clicking on Installed Operators. The status should show that the installation succeeded.
+1. In the web console, verify that you installed the operatory correctly by selecting **Operators** in the left navigation and by clicking on Installed Operators. The status should show that the installation succeeded.
 
    ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/installed-operator.png)
 
@@ -117,30 +117,33 @@ Now we will show you how to create a project to be used and managed from command
 
     ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/select-pvc.png)
 
-1. The next step is to create a persistent volume claim. Choose the storage class you need &mdash; either gold, silver, or bronze. Add your name as `fp-predict-plus-pvc`, select single user access, and assign the storage size as 20 GB. 
+1. The next step is to create a persistent volume claim. Choose the storage class you need -- either gold, silver, or bronze. Add your name as `fp-predict-plus-pvc`, select single user access, and assign the storage size as 20 GB. 
 
     ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/create-pvc.png)
 
-1. After you create the persistent volume claim (PVC), you need to bind it with the persistent volume (PV) which you created in tye earlier step. You should see the status as `Bound` per below after couple of minutes.
+1. After you create the persistent volume claim (PVC), you need to bind it with the persistent volume (PV) which you created in the earlier step. You should see the status as `Bound` per below after couple of minutes.
 
     ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/pvc-bound.png)
 
 ## Install the instance of FPPredict Plus
 
-Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the name per below under persistent volume with `useExisting as false`, name of persistent volume claims, routerCanonicalHostname would be the web console URL and hit `Save`. routerCanonicalHostname would start with the cluster name, cluster id till appdomain.cloud. The initial part in the URL - `https://console-openshift-console` should be removed while updating routerCanonicalHostname.
+Follow these steps to install the instance, also known as the *operand*, of FPPredict Plus:
 
-![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/yaml-changes.png) <!--EM: Is this the wrong image? It doesnt' seem to go with teh text above-->
+1. Click on **Installed operators** under the Operators tab and select **FP Predict Plus Operator** to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. 
 
-The next step is to proceed towards FP-Predict-Plus option and click on Create FPpredictplus instance. Edit the YAML file and give a name for the instance and click `Save`.
+    ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/operand.png)
 
-![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/operand.png)
+1. Select **YAML** and update the name per below under persistent volume with `useExisting as false`, name of persistent volume claims, routerCanonicalHostname would be the web console URL and hit `Save`. routerCanonicalHostname would start with the cluster name, cluster id till appdomain.cloud. The initial part in the URL - `https://console-openshift-console` should be removed while updating routerCanonicalHostname.
 
+    ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/yaml-changes.png)
+
+1. The next step is to proceed towards FP-Predict-Plus option and click on **Create FPpredictplus** instance. Edit the YAML file and give a name for the instance and click `Save`.
+    
 ### Launch the instance of FPPredict Plus
 
-Now you are set to launch the instance. To do so, click on Networking and select Routes and then click on the URL which is under the location to launch the instance. 
+Now you are set to launch the instance. To do so, click **Networking**, select **Routes**, and then click on the URL which is under the location to launch the instance. 
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/route.png)
-<!--EM: Is this the right image?-->
 
 ### Register the instance of FPPredict Plus
 
