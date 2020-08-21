@@ -143,7 +143,7 @@ After the persistent volume claim (PVC) is created, it needs to be bound with th
 
 ### Install the operand (Instance) of FPPredict Plus
 
-Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the name per below under persistent volume with `useExisting as false`, name of persistent volume claims, routerCanonicalHostname would be the web console URL and hit `Save`. routerCanonicalHostname would start with the cluster name, cluster id till appdomain.cloud. The initial part in the URL - `https://console-openshift-console` should be removed while updating routerCanonicalHostname.
+Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the `name` as `fp-predict-plus-pvc` per below, `useExisting as false` (useExisting would be true if we want to use the same storage for another instance), `volumeName` as `fp-predict-plus-pv`, routerCanonicalHostname would be the web console URL and hit `Save`. routerCanonicalHostname would start with the cluster name, cluster id till appdomain.cloud. The initial part in the URL - `https://console-openshift-console` should be removed while updating routerCanonicalHostname.
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/yaml-changes.png)
 
