@@ -127,7 +127,10 @@ Now we will show you how to create a project to be used and managed from command
 
 ## Install the instance of FPPredict Plus
 
+
 Follow these steps to install the instance, also known as the *operand*, of FPPredict Plus:
+
+1. Click on Installed operators under `Operators` and click on FP Predict Plus Operator to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. Click on YAML and update the `name` as `fp-predict-plus-pvc` per below, `useExisting as false` (useExisting would be true if we want to use the same storage for another instance), `volumeName` as `fp-predict-plus-pv`, routerCanonicalHostname would be the web console URL and hit `Save`. routerCanonicalHostname would start with the cluster name, cluster id till appdomain.cloud. The initial part in the URL - `https://console-openshift-console` should be removed while updating routerCanonicalHostname.
 
 1. Click on **Installed operators** under the Operators tab and select **FP Predict Plus Operator** to get the options like Overview, YAML, Subscription, Events, FP-Predict-Plus. 
 
@@ -153,7 +156,10 @@ The support team will send the license file (with 30 days validity) and needs to
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/sys-info.png)
 
+
 After uploading the license key, bring up the `FP Predict+` instance like below. The navigation pane on the left should have four options:  Dashboard, Analytics, Dataset Management & License Information.
+
+**Note :- Trial License key is provided only once by the support team. Please do not uninstall the instance of FP Predict Plus (in the web console or in Red Hat Marketplace portal) as re-installation of the instance would require a new trial license key.**
 
 ![](https://github.com/IBM/getting-started-with-fppredictplus/blob/master/images/fp-predict.png)
 
